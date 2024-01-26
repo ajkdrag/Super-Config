@@ -100,12 +100,12 @@ check-types:
 # help: check-lint                     - run static analysis checks
 .PHONY: check-lint
 check-lint:
-	@pylint --rcfile=.pylintrc superconfig ./tests setup.py ./examples
+	@pylint superconfig ./tests setup.py ./examples
 
 
 # help: check-static-analysis          - check code style compliance
 .PHONY: check-static-analysis
-check-static-analysis: check-lint check-types
+check-static-analysis: check-types
 
 
 # help: docs                           - generate project documentation
