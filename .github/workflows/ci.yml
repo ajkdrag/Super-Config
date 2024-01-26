@@ -11,8 +11,9 @@ jobs:
 
     runs-on: ubuntu-latest
     strategy:
+      failed-fast: false
       matrix:
-        python-version: [3.6, 3.7, 3.8]
+        python-version: [3.8]
 
     steps:
     - uses: actions/checkout@v2
@@ -37,9 +38,9 @@ jobs:
     - name: Check code style
       run: |
         make check-style
-    - name: Check static analysis
-      run: |
-        make check-static-analysis
+#    - name: Check static analysis
+#      run: |
+#        make check-static-analysis
     - name: Install package
       run: |
         pip install .

@@ -18,3 +18,5 @@ def get_file_parser(path_to_file: str) -> Union[IniParser, JsonParser, YamlParse
         return JsonParser(path_to_file)
     elif file_type == "yaml":
         return YamlParser(path_to_file)
+    raise NotImplementedError(f"File type {file_type} not supported.")
+
