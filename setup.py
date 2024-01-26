@@ -40,11 +40,11 @@ requirements = parse_requirements('requirements.txt')
 
 if __name__ == '__main__':
     setup(
-        name='superconfig',
+        name='Super-Config',
         description='Config parsing on steroids.',
         long_description='\n\n'.join([readme, changes]),
         license='MIT license',
-        url='https://github.com/GithubUserName/superconfig',
+        url='https://github.com/ajkdrag/superconfig',
         version=version,
         author='ajkdrag',
         author_email='',
