@@ -35,6 +35,9 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-pip-
           ${{ runner.os }}-
+    - name: style code 
+      run: |
+        make style
     - name: Check code style
       run: |
         make check-style

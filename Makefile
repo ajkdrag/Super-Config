@@ -105,7 +105,7 @@ check-lint:
 
 # help: check-static-analysis          - check code style compliance
 .PHONY: check-static-analysis
-check-static-analysis: check-types
+check-static-analysis: check-lint check-types
 
 
 # help: docs                           - generate project documentation
