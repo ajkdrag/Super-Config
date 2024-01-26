@@ -7,7 +7,7 @@ on:
     branches: [ master ]
 
 jobs:
-  build:
+  pypi-publish:
 
     runs-on: ubuntu-latest
     strategy:
@@ -59,3 +59,5 @@ jobs:
     - name: Generate package
       run: |
         make dist
+    - name: Publish package distributions to PyPI
+      uses: pypa/gh-action-pypi-publish@release/v1
