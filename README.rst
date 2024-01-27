@@ -7,7 +7,7 @@ Config parsing on steroids.
 Quickstart
 ==========
 
-Super-Config is available on PyPI and can be installed with `pip <https://pip.pypa.io>`_.
+Super-Config is available on PyPI and can be installed with `pip <https://pypi.org/project/Super-Config/>`_.
 
 .. code-block:: console
 
