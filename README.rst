@@ -34,5 +34,6 @@ Here is a simple example:
         val = SuperConfig.get("ENVIRONMENT_ID", dtype=sc.INT)
         print(val, type(val))
 
-Refer the example snippet: `examples/quickstart.py`
+Refer the example snippet: ``examples/quickstart.py``
+
 The `API Reference <http://superconfig.readthedocs.io>`_ provides API-level documentation.
