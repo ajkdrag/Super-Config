@@ -12,8 +12,6 @@ import sys
 
 from sphinx.ext import apidoc
 
-sys.path.insert(0, os.path.abspath('../../src/superconfig'))
-
 
 regexp = re.compile(r'.*__version__ = [\'\"](.*?)[\'\"]', re.S)
 repo_root = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
