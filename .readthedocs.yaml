@@ -11,4 +11,6 @@ sphinx:
   configuration: docs/source/conf.py
 
 python:
-  pip_install: true
+  install:
+    method: pip
+    path: .
