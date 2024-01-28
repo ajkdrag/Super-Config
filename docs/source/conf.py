@@ -12,7 +12,7 @@ import sys
 
 from sphinx.ext import apidoc
 
-# sys.path.insert(0, os.path.abspath('.'))
+sys.path.insert(0, os.path.abspath('../../src/superconfig'))
 
 
 regexp = re.compile(r'.*__version__ = [\'\"](.*?)[\'\"]', re.S)
