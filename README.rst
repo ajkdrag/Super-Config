@@ -4,7 +4,7 @@
    :alt: GitHub-Pages deployment status
    :target: https://ajkdrag.github.io/Super-Config
 
-.. |pypi_badge| image:: .. image:: https://img.shields.io/pypi/v/Super-Config?color=green
+.. |pypi_badge| image:: https://img.shields.io/pypi/v/Super-Config?color=green
    :alt: PyPI - Version
    :target: https://pypi.org/project/Super-Config/
 
