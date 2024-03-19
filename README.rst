@@ -1,8 +1,22 @@
+|docs_badge| |pypi_badge|
+
+.. |docs_badge| image:: https://img.shields.io/github/deployments/ajkdrag/ocrtoolkit/github-pages?label=docs
+   :alt: GitHub-Pages deployment status
+   :target: https://ajkdrag.github.io/Super-Config
+
+.. |pypi_badge| image:: .. image:: https://img.shields.io/pypi/v/Super-Config?color=green
+   :alt: PyPI - Version
+   :target: https://pypi.org/project/Super-Config/
+
+
 Super-Config
 ###################################
 
 Config parsing on steroids.
 
+
+.. contents::
+   :local:
 
 Quickstart
 ==========
@@ -34,6 +48,14 @@ Here is a simple example:
         val = SuperConfig.get("ENVIRONMENT_ID", dtype=sc.INT)
         print(val, type(val))
 
-Refer the example snippet: ``examples/quickstart.py``
 
-The `API Reference <http://superconfig.readthedocs.io>`_ provides API-level documentation.
+Documentation
+==============
+
+The `API Reference <https://ajkdrag.github.io/Super-Config/>`_ provides API-level documentation
+
+
+Examples
+=========
+
+Refer the `examples <https://github.com/ajkdrag/Super-Config/tree/master/examples>`_ folder in this repository
