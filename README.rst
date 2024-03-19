@@ -59,3 +59,9 @@ Examples
 =========
 
 Refer the `examples <https://github.com/ajkdrag/Super-Config/tree/master/examples>`_ folder in this repository
+
+
+Credits
+========
+
+- `LayConf repo <https://github.com/davidohana/LayConf>`_
