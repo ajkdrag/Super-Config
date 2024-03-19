@@ -107,24 +107,17 @@ check-lint:
 .PHONY: check-static-analysis
 check-static-analysis: check-lint check-types
 
-
-# help: docs                           - generate project documentation
+# help: docs                           - generate project documentation using pdoc
 .PHONY: docs
-docs: coverage
-	@cd docs; rm -rf source/api/superconfig*.rst source/api/modules.rst build/*
-	@cd docs; make html
+docs: 
+	@pdoc --html --force -o docs superconfig
 
-
-# help: check-docs                     - quick check docs consistency
-.PHONY: check-docs
-check-docs:
-	@cd docs; make dummy
 
 
 # help: serve-docs                     - serve project html documentation
 .PHONY: serve-docs
 serve-docs:
-	@cd docs/build; python -m http.server --bind 127.0.0.1
+	@pdoc --http : superconfig
 
 
 # help: dist                           - create a wheel distribution package
