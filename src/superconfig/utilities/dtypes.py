@@ -3,7 +3,13 @@ class CallableConverter(type):
         return cls.convert(val)
 
 
-class STR(metaclass=CallableConverter):
+class ANY(metaclass=CallableConverter):
+    @staticmethod
+    def convert(value):
+        return value
+
+
+class STR(ANY):
     @staticmethod
     def convert(value):
         return str(value)

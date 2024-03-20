@@ -4,12 +4,8 @@ from superconfig.parsers import BaseParser
 
 
 class YamlParser(BaseParser):
-    def __init__(self, path: str):
-        self.data = self.read(path)
-
-    def read(self, path: str):
-        with open(path, "r") as f:
-            return yaml.safe_load(f)
+    def load(self, raw: str):
+        self.data = yaml.safe_load(raw)
 
     def validate_key(self, key: str):
         return True

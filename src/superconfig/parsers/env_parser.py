@@ -7,7 +7,7 @@ class EnvParser(BaseParser):
     def __init__(self, env_prefix: str = ""):
         self.env_prefix = env_prefix
 
-    def read(self, path: str):
+    def load(self, raw: str):
         pass
 
     def validate_key(self, key: str):
