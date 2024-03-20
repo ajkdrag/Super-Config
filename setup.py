@@ -65,7 +65,7 @@ requirements = parse_requirements("requirements.txt")
 
 if __name__ == "__main__":
     setup(
-        name="superconfig",
+        name="Super-Config",
         description="Parse bank cheques",
         long_description="\n\n".join([readme, changes]),
         license="Apache Software License 2.0",
@@ -77,12 +77,11 @@ if __name__ == "__main__":
         maintainer_email="",
         install_requires=requirements,
         extras_require=get_extra_requires("extra-requirements.txt"),
-        keywords=["superconfig"],
+        keywords=["superconfig", "Super-Config", "Super_Config", "super_config"],
         package_dir={"": "src"},
         packages=find_packages("src"),
         zip_safe=False,
         classifiers=[
-            "Development Status :: 3 - Alpha",
             "Intended Audience :: Developers",
             "Programming Language :: Python :: 3.8",
             "Programming Language :: Python :: 3.9",
