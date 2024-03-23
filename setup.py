@@ -66,7 +66,7 @@ requirements = parse_requirements("requirements.txt")
 if __name__ == "__main__":
     setup(
         name="Super-Config",
-        description="Parse bank cheques",
+        description="Config parsing on steroids",
         long_description="\n\n".join([readme, changes]),
         license="Apache Software License 2.0",
         url="https://github.com/ajkdrag/Super-Config",
